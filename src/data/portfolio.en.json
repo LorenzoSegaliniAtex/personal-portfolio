@@ -93,11 +93,11 @@
       "verifyUrl": ""
     },
     {
-      "name": "Certification name 2",
-      "issuer": "Issuing organization",
-      "date": "2025",
-      "badge": "/assets/badges/placeholder-2.svg",
-      "pdf": "/assets/certificates/placeholder-2.pdf",
+      "name": "Google IT Automation with Python Certificate",
+      "issuer": "Google · Coursera",
+      "date": "",
+      "badge": "/assets/badges/google-it-automation-python.png",
+      "pdf": "/assets/certificates/google-it-automation-python-certificate.pdf",
       "verifyUrl": ""
     },
     {
