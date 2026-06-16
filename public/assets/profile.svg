@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <rect width="240" height="240" fill="#1c2029"/>
+  <circle cx="120" cy="95" r="46" fill="#2a2f3a"/>
+  <path d="M40 220c0-44 36-72 80-72s80 28 80 72z" fill="#2a2f3a"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#6ea8fe">Foto profilo</text>
+</svg>

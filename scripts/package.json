@@ -1,0 +1,13 @@
+{
+  "name": "cv-generator",
+  "type": "module",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Genera il CV in PDF (IT/EN) dai dati del portfolio",
+  "scripts": {
+    "build:cv": "node generate-cv.mjs"
+  },
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}

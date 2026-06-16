@@ -1,0 +1,32 @@
+{
+  "en": {
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "skills": "Skills",
+    "languages": "Languages",
+    "softSkills": "Soft skills",
+    "certifications": "Certifications",
+    "interests": "Interests",
+    "cvIt": "CV (IT) ↓",
+    "cvEn": "CV (EN) ↓",
+    "viewCert": "View certificate (PDF) →",
+    "footer": "Built with Astro · Hosted on GitHub Pages",
+    "switchLabel": "Italiano"
+  },
+  "it": {
+    "experience": "Esperienza",
+    "projects": "Progetti",
+    "education": "Formazione",
+    "skills": "Competenze",
+    "languages": "Lingue",
+    "softSkills": "Soft skills",
+    "certifications": "Certificazioni",
+    "interests": "Interessi",
+    "cvIt": "CV (IT) ↓",
+    "cvEn": "CV (EN) ↓",
+    "viewCert": "Vedi certificato (PDF) →",
+    "footer": "Realizzato con Astro · Ospitato su GitHub Pages",
+    "switchLabel": "English"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "profile": {
+    "name": "Lorenzo Segalini",
+    "headline": "Software Engineer",
+    "location": "Bologna, Italia",
+    "email": "lorenzosegalini@outlook.com",
+    "phone": "+39 331 586 7638",
+    "summary": "Software Engineer con esperienza nello sviluppo di prodotti web full-stack. Lavoro su applicazioni in produzione con JavaScript/TypeScript, Node.js e React/Next.js, dal database al deploy in cloud. Mi piace risolvere problemi complessi con attenzione ai dettagli e imparare velocemente nuove tecnologie.",
+    "photo": "/assets/profile.svg",
+    "links": [
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/lorenzosegalini" },
+      { "label": "Email", "url": "mailto:lorenzosegalini@outlook.com" }
+    ]
+  },
+  "experience": [
+    {
+      "role": "Product Software Engineer",
+      "company": "Atex Global Media",
+      "location": "Bologna, Italia",
+      "period": "2022 – Presente",
+      "description": "",
+      "highlights": []
+    },
+    {
+      "role": "Software Engineer",
+      "company": "bitApp",
+      "location": "Bologna, Italia",
+      "period": "Maggio 2021 – Luglio 2021",
+      "description": "",
+      "highlights": []
+    },
+    {
+      "role": "Attività di tutoring in informatica e matematica",
+      "company": "Scuole superiori e università",
+      "location": "Piacenza, Italia",
+      "period": "2016 – Presente",
+      "description": "",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "degree": "Laurea triennale in Informatica per il Management",
+      "institution": "Alma Mater Studiorum – Università di Bologna",
+      "location": "Bologna, Italia",
+      "period": "Settembre 2018 – Dicembre 2021",
+      "description": ""
+    },
+    {
+      "degree": "Diploma di Liceo Scientifico",
+      "institution": "Liceo Scientifico L. Respighi",
+      "location": "Piacenza, Italia",
+      "period": "Settembre 2013 – Giugno 2018",
+      "description": ""
+    }
+  ],
+  "skills": [
+    { "category": "Linguaggi", "items": ["JavaScript", "Python", "Java", "PHP", "R"] },
+    { "category": "Framework & Runtime", "items": ["Node.js", "React", "Next.js"] },
+    { "category": "DevOps & Cloud", "items": ["Docker", "Convox", "AWS"] },
+    { "category": "Database", "items": ["MySQL", "PostgreSQL"] },
+    { "category": "Strumenti", "items": ["GitHub", "GitLab", "GitKraken", "Jira", "Bitbucket"] }
+  ],
+  "softSkills": ["Etica del lavoro", "Apprendimento rapido", "Problem solving"],
+  "languages": [
+    { "name": "Italiano", "level": "Madrelingua" },
+    { "name": "Inglese", "level": "Buono (B2)" }
+  ],
+  "projects": [
+    {
+      "name": "Joliegram: P2P Network",
+      "highlights": [
+        "Sistema di messaggistica basato su una rete P2P parzialmente decentralizzata.",
+        "Firma digitale e crittografia a chiave asimmetrica per canali di comunicazione pubblici e privati.",
+        "Architettura basata su concetti Client-Server e Service."
+      ],
+      "tech": "Jolie, Java"
+    }
+  ],
+  "interests": [
+    "Bioinformatica: applicazione di algoritmi e analisi dei dati a genomica e biologia computazionale.",
+    "Automotive: software per veicoli connessi, guida assistita e sistemi embedded.",
+    "Finance: tecnologie fintech, analisi di dati finanziari e automazione dei processi.",
+    "Astrospace: tecnologie spaziali, osservazione astronomica ed elaborazione di dati satellitari."
+  ],
+  "certifications": [
+    {
+      "name": "Google Data Analytics Certificate",
+      "issuer": "Google · Coursera",
+      "date": "",
+      "badge": "/assets/badges/google-data-analytics.png",
+      "pdf": "/assets/certificates/google-data-analytics-certificate.pdf",
+      "verifyUrl": ""
+    },
+    {
+      "name": "Nome certificazione 2",
+      "issuer": "Ente emittente",
+      "date": "2025",
+      "badge": "/assets/badges/placeholder-2.svg",
+      "pdf": "/assets/certificates/placeholder-2.pdf",
+      "verifyUrl": ""
+    },
+    {
+      "name": "Nome certificazione 3",
+      "issuer": "Ente emittente",
+      "date": "2024",
+      "badge": "/assets/badges/placeholder-3.svg",
+      "pdf": "/assets/certificates/placeholder-3.pdf",
+      "verifyUrl": ""
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "profile": {
+    "name": "Lorenzo Segalini",
+    "headline": "Software Engineer",
+    "location": "Bologna, Italy",
+    "email": "lorenzosegalini@outlook.com",
+    "phone": "+39 331 586 7638",
+    "summary": "Software Engineer with experience building full-stack web products. I work on production applications with JavaScript/TypeScript, Node.js and React/Next.js, from database to cloud deployment. I enjoy solving complex problems with attention to detail and picking up new technologies quickly.",
+    "photo": "/assets/profile.svg",
+    "links": [
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/lorenzosegalini" },
+      { "label": "Email", "url": "mailto:lorenzosegalini@outlook.com" }
+    ]
+  },
+  "experience": [
+    {
+      "role": "Product Software Engineer",
+      "company": "Atex Global Media",
+      "location": "Bologna, Italy",
+      "period": "2022 – Present",
+      "description": "",
+      "highlights": []
+    },
+    {
+      "role": "Software Engineer",
+      "company": "bitApp",
+      "location": "Bologna, Italy",
+      "period": "May 2021 – July 2021",
+      "description": "",
+      "highlights": []
+    },
+    {
+      "role": "Tutoring in computer science and mathematics",
+      "company": "High school and university students",
+      "location": "Piacenza, Italy",
+      "period": "2016 – Present",
+      "description": "",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor's degree in Computer Science and Management",
+      "institution": "Alma Mater Studiorum – University of Bologna",
+      "location": "Bologna, Italy",
+      "period": "September 2018 – December 2021",
+      "description": ""
+    },
+    {
+      "degree": "High School Diploma (Scientific Lyceum)",
+      "institution": "Liceo Scientifico L. Respighi",
+      "location": "Piacenza, Italy",
+      "period": "September 2013 – June 2018",
+      "description": ""
+    }
+  ],
+  "skills": [
+    { "category": "Languages", "items": ["JavaScript", "Python", "Java", "PHP", "R"] },
+    { "category": "Frameworks & Runtime", "items": ["Node.js", "React", "Next.js"] },
+    { "category": "DevOps & Cloud", "items": ["Docker", "Convox", "AWS"] },
+    { "category": "Databases", "items": ["MySQL", "PostgreSQL"] },
+    { "category": "Tools", "items": ["GitHub", "GitLab", "GitKraken", "Jira", "Bitbucket"] }
+  ],
+  "softSkills": ["Strong work ethic", "Fast learning", "Problem solving"],
+  "languages": [
+    { "name": "Italian", "level": "Native" },
+    { "name": "English", "level": "Good (B2)" }
+  ],
+  "projects": [
+    {
+      "name": "Joliegram: P2P Network",
+      "highlights": [
+        "Messaging system based on a partially decentralized P2P network.",
+        "Digital signature and asymmetric-key cryptography for public and private communication channels.",
+        "Built on Client-Server and Service concepts."
+      ],
+      "tech": "Jolie, Java"
+    }
+  ],
+  "interests": [
+    "Bioinformatics: applying algorithms and data analysis to genomics and computational biology.",
+    "Automotive: software for connected vehicles, driver assistance and embedded systems.",
+    "Finance: fintech technologies, financial data analysis and process automation.",
+    "Astrospace: space technologies, astronomical observation and satellite data processing."
+  ],
+  "certifications": [
+    {
+      "name": "Google Data Analytics Certificate",
+      "issuer": "Google · Coursera",
+      "date": "",
+      "badge": "/assets/badges/google-data-analytics.png",
+      "pdf": "/assets/certificates/google-data-analytics-certificate.pdf",
+      "verifyUrl": ""
+    },
+    {
+      "name": "Certification name 2",
+      "issuer": "Issuing organization",
+      "date": "2025",
+      "badge": "/assets/badges/placeholder-2.svg",
+      "pdf": "/assets/certificates/placeholder-2.pdf",
+      "verifyUrl": ""
+    },
+    {
+      "name": "Certification name 3",
+      "issuer": "Issuing organization",
+      "date": "2024",
+      "badge": "/assets/badges/placeholder-3.svg",
+      "pdf": "/assets/certificates/placeholder-3.pdf",
+      "verifyUrl": ""
+    }
+  ]
+}

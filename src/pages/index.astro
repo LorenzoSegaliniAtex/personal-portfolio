@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Portfolio from "../components/Portfolio.astro";
+import data from "../data/portfolio.en.json";
+import ui from "../data/ui.json";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
+<Layout lang="en">
+  <Portfolio data={data} t={ui.en} switchHref={`${base}/it`} />
+</Layout>

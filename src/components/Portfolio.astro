@@ -1,0 +1,139 @@
+---
+interface Props {
+  data: any;
+  t: any;
+  switchHref: string;
+}
+const { data, t, switchHref } = Astro.props;
+const { profile, experience, education, skills, softSkills, languages, projects, interests, certifications } = data;
+
+// URL corretto per gli asset in /public tenendo conto del "base" (GitHub Pages project page).
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const asset = (p: string) => `${base}/${p.replace(/^\//, "")}`;
+
+const cvIt = asset("/assets/cv/cv-lorenzo-segalini-it.pdf");
+const cvEn = asset("/assets/cv/cv-lorenzo-segalini-en.pdf");
+---
+
+<header class="container hero">
+  <img class="avatar" src={asset(profile.photo)} alt={profile.name} />
+  <div>
+    <h1>{profile.name}</h1>
+    <p class="headline">{profile.headline}</p>
+    <p class="meta">{profile.location} · <a href={`mailto:${profile.email}`}>{profile.email}</a></p>
+    <p class="summary">{profile.summary}</p>
+    <nav class="links">
+      {profile.links.map((l: any) => <a href={l.url} target="_blank" rel="noopener">{l.label}</a>)}
+      <a href={cvEn} target="_blank" rel="noopener">{t.cvEn}</a>
+      <a href={cvIt} target="_blank" rel="noopener">{t.cvIt}</a>
+      <a href={switchHref} class="lang-switch">🌐 {t.switchLabel}</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section id="experience">
+    <h2 class="section-title">{t.experience}</h2>
+    {experience.map((e: any) => (
+      <article class="item">
+        <div class="item-head">
+          <div>
+            <span class="role">{e.role}</span> · <span class="company">{e.company}</span>
+            <div class="where">{e.location}</div>
+          </div>
+          <span class="period">{e.period}</span>
+        </div>
+        {e.description && <p>{e.description}</p>}
+        {e.highlights && e.highlights.length > 0 && (
+          <ul>{e.highlights.map((h: string) => <li>{h}</li>)}</ul>
+        )}
+      </article>
+    ))}
+  </section>
+
+  {projects && projects.length > 0 && (
+    <section id="projects">
+      <h2 class="section-title">{t.projects}</h2>
+      {projects.map((pr: any) => (
+        <article class="item">
+          <div class="item-head">
+            <span class="role">{pr.name}</span>
+            {pr.tech && <span class="period">{pr.tech}</span>}
+          </div>
+          {pr.highlights && pr.highlights.length > 0 && (
+            <ul>{pr.highlights.map((h: string) => <li>{h}</li>)}</ul>
+          )}
+        </article>
+      ))}
+    </section>
+  )}
+
+  <section id="education">
+    <h2 class="section-title">{t.education}</h2>
+    {education.map((e: any) => (
+      <article class="item">
+        <div class="item-head">
+          <div>
+            <span class="role">{e.degree}</span> · <span class="company">{e.institution}</span>
+            <div class="where">{e.location}</div>
+          </div>
+          <span class="period">{e.period}</span>
+        </div>
+        {e.description && <p>{e.description}</p>}
+      </article>
+    ))}
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">{t.skills}</h2>
+    <div class="skills-grid">
+      {skills.map((s: any) => (
+        <div class="skill-cat">
+          <h3>{s.category}</h3>
+          <div class="chips">{s.items.map((i: string) => <span class="chip">{i}</span>)}</div>
+        </div>
+      ))}
+      {languages && languages.length > 0 && (
+        <div class="skill-cat">
+          <h3>{t.languages}</h3>
+          <div class="chips">{languages.map((l: any) => <span class="chip">{l.name} · {l.level}</span>)}</div>
+        </div>
+      )}
+      {softSkills && softSkills.length > 0 && (
+        <div class="skill-cat">
+          <h3>{t.softSkills}</h3>
+          <div class="chips">{softSkills.map((s: string) => <span class="chip">{s}</span>)}</div>
+        </div>
+      )}
+    </div>
+  </section>
+
+  {certifications && certifications.length > 0 && (
+    <section id="certifications">
+      <h2 class="section-title">{t.certifications}</h2>
+      <div class="cert-grid">
+        {certifications.map((c: any) => (
+          <a class="cert" href={asset(c.pdf)} target="_blank" rel="noopener" title={c.name}>
+            <img src={asset(c.badge)} alt={`Badge ${c.name}`} loading="lazy" />
+            <span class="cert-name">{c.name}</span>
+            <span class="cert-meta">{c.date ? `${c.issuer} · ${c.date}` : c.issuer}</span>
+            <span class="cert-cta">{t.viewCert}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {interests && interests.length > 0 && (
+    <section id="interests">
+      <h2 class="section-title">{t.interests}</h2>
+      <article class="item">
+        <ul>{interests.map((i: string) => <li>{i}</li>)}</ul>
+      </article>
+    </section>
+  )}
+</main>
+
+<footer>
+  <p>© {profile.name} · {t.footer}</p>
+</footer>

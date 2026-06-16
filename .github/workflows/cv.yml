@@ -1,0 +1,34 @@
+name: Genera CV PDF (artifact)
+
+# Avvio manuale dalla tab "Actions" (Run workflow), oppure quando cambiano i dati del CV.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/data/portfolio.json"
+      - "src/data/portfolio.en.json"
+      - "scripts/**"
+
+jobs:
+  build-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Installa dipendenze e genera i PDF
+        working-directory: scripts
+        run: |
+          npm install
+          npm run build:cv
+
+      - name: Carica i CV come artifact scaricabile
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-pdf
+          path: public/assets/cv/*.pdf
+          if-no-files-found: error
